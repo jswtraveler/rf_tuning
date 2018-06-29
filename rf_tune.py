@@ -3,6 +3,8 @@ from sklearn.metrics import confusion_matrix, precision_recall_curve, average_pr
 from sklearn.ensemble import RandomForestRegressor
 import numpy as np
 
+X_train, X_test, y_train, y_test = \
+    sklearn.model_selection.train_test_split(X, y, random_state=1985)
 
 test=df_test
 
